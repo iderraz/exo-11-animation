@@ -40,38 +40,24 @@ h2{
   font-size: 50px;
   margin: 100px;
   animation-name: titre2;
-    animation-delay: 1s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction: alternate linear;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     position: relative;
 }
-/*
-@keyframes titre2{
-  from{
-    transform: scaleX(2);
-    transform: scaleY(1);
-    transform-origin:(0,0);
-    top: 150px;
-  }
-  to{
-    transform: scaleX(1);
-    transform: scaleY(2);
-    transform-origin: (0,0);
-    top: 0;
-  }
-}*/
 
 @keyframes titre2{
   from{
-    transform: scaleX(2);
     transform: scaleY(1);
-    transform-origin:(0,0);
+    transform: scaleX(2);
+    transform-origin:0 0;
     bottom: 0px;
     }
   to{
-    transform: scaleX(1);
     transform: scaleY(2);
-    transform-origin:(0,0);
+    transform: scaleX(1);
+    transform-origin:0 0;
     bottom: 100px;
   }
 }
